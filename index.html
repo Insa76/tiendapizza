@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda De Pizzas</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="boton">
+      <a
+        href="https://api.whatsapp.com/send?phone=543624626465&text=Hola,%20quiero%20hacer%20un%20pedido."
+        target="_blank"
+        ><img class="logo" src="/img/logawap.png" alt=""
+      /></a>
+    </div>
+
+    <header>
+      <div class="header-superior">
+        <div class="logo">
+          <img src="img/tienda-de-pizzas.jpg" alt="Logo Tienda de Pizzas" />
+          <img src="img/tienda-de-pizzas.jpg" alt="Logo Tienda de Pizzas" />
+        </div>
+        <div class="titulo">
+          <h2>La mejor tienda para comer pizzas. Armalas como quieras.</h2>
+        </div>
+
+        <!--<div class="search">
+          <input type="search" placeholder="¿Que deseas buscar?" />
+        </div>-->
+      </div>
+
+      <div class="conteiner-menu">
+        <div class="menu">
+          <nav class="navegacion">
+            <ul>
+              <li><a href="#" id="selected"></a></li>
+              <li>
+                <a href="#"><b>Nosotros</b></a>
+              </li>
+              <li>
+                <a href="#"><b>Productos</b></a>
+                <ul>
+                  <li><a href="#armar">Como Armar tu Pizza</a></li>
+                  <li><a href="#empanadas">Empanadas</a></li>
+                  <li><a href="#migas">Sandwiches de Miga</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><b>Contacto</b></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="img-grid">
+        <img src="/img/dough-g48902153b_1280.jpg" alt="" />
+        <img src="/img/pizza-g182096107_1280.jpg" alt="" />
+        <img src="/img/wine-7046276_1280.jpg" alt="" />
+      </div>
+      <div class="grid-conteiner">
+        <div class="grid-item">
+          <div>
+            <h3>Opcion #1</h3>
+            <p>
+              Queso Muzzarella, salsa, oregano y aceitunas. Todo encima de una
+              especial masa casera.
+            </p>
+            <h4>$1200</h4>
+          </div>
+        </div>
+        <div class="grid-item">
+          <h3>Opcion #2</h3>
+          <p>Queso Muzzarella, salsa, Morrones, Jamon en Cubitos y Aceitunas</p>
+          <h4>$1700</h4>
+        </div>
+        <div class="grid-item">
+          <h3>Opcion #3</h3>
+          <p>
+            Queso Muzzarella, salsa, rodajas de tomate redondo, un toque de
+            aceite de oliva y Aceitunas.
+          </p>
+          <h4>$1400</h4>
+        </div>
+        <div class="grid-item">
+          <h3>Opcion #4</h3>
+          <p>
+            Queso Muzzarella, salsa, Rodajas de Tomate Redondo, Huevo picado y
+            Aceitunas.
+          </p>
+          <h4>$1600</h4>
+        </div>
+        <div class="grid-item">
+          <h3>Opcion #5</h3>
+          <p>
+            Queso Muzzarella, salsa, Cebolla Caramelizada, Cuadraditos de
+            Panceta salteadas y Aceitunas.
+          </p>
+          <h4>$1700</h4>
+        </div>
+        <div class="grid-item">
+          <h4>Opcion #6</h4>
+          <p>
+            Queso Muzzarella, salsa, Morrones Asados, Jamon en Cubitos y
+            Aceitunas.
+          </p>
+          <h4>$1700</h4>
+        </div>
+      </div>
+
+      <div class="conteiner-armar">
+        <div class="ingredientes">
+          <h3>Ingredientes</h3>
+
+          <ul>
+            <li>$200 c/u</li>
+            <li>Tomates</li>
+            <li>Morrones</li>
+            <li>Ajies</li>
+            <li>Cebolla</li>
+            <li>Huevo</li>
+            <li>Salchichas</li>
+          </ul>
+
+          <ul>
+            <li>$300 c/u</li>
+            <li>Jamon</li>
+            <li>Panceta</li>
+            <li>Champignones</li>
+            <li>Longaniza</li>
+            <li>Roquefot</li>
+            <li>Humita</li>
+          </ul>
+        </div>
+        <div id="armar" class="armar">
+          <h3>Como Armar Tu Pizza Favorita</h3>
+          <p><b>Pizza de Muzzarella + Los Ingredientes que te gusten</b></p>
+        </div>
+      </div>
+
+      <div class="conteiner-emp">
+        <div id="empanadas" class="empanadas">
+          <p><b>Empanadas de Carne $1800</b></p>
+          <p><b>Empanadas de Jamon y Queso $1800</b></p>
+          <p><b>Empanadas de Humita $1650</b></p>
+          <p><b>Empanadas de Pollo $1650</b></p>
+        </div>
+        <div class="sub-emp">
+          <h3>Empanadas</h3>
+        </div>
+      </div>
+
+      <div class="conteiner-migas">
+        <div class="sub">
+          <h3>Sandwiches de Miga</h3>
+        </div>
+        <div id="migas" class="migas">
+          <p><b>Migas Simple de Jamon y Queso $1800</b></p>
+          <p><b>Migas Triple de Jamon y Queso $1800</b></p>
+          <p><b>Migas Triple Lechuga, Tomate, Jamon y Queso $1650</b></p>
+          <p><b>Migas Triple Especial $1650</b></p>
+        </div>
+      </div>
+
+      <div class="mapa">
+        <h4>Donde Encontrarnos</h4>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2977.2750561538523!2d-58.99780554760635!3d-27.45067751831893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94450db1796693a9%3A0x2e7edeebeb043526!2sTienda%20de%20Pizzas!5e0!3m2!1ses!2sar!4v1683431955073!5m2!1ses!2sar"
+          width="600"
+          height="220"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <div class="horarios">
+          <div class="domicilio">
+            <h4>Av. Moreno 536-Rcia</h4>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon-map-pin"
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ffffff"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <circle cx="12" cy="11" r="3" />
+              <path
+                d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"
+              />
+            </svg>
+          </div>
+          <div class="dias">
+            <h4>De Sabados a Jueves</h4>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="calendar"
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ffffff"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <rect x="4" y="5" width="16" height="16" rx="2" />
+              <line x1="16" y1="3" x2="16" y2="7" />
+              <line x1="8" y1="3" x2="8" y2="7" />
+              <line x1="4" y1="11" x2="20" y2="11" />
+              <line x1="11" y1="15" x2="12" y2="15" />
+              <line x1="12" y1="15" x2="12" y2="18" />
+            </svg>
+          </div>
+          <div class="horas">
+            <h4>De 20:00 a 23:30 hs.</h4>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="clock"
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ffffff"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <circle cx="12" cy="12" r="9" />
+              <polyline points="12 7 12 12 15 15" />
+            </svg>
+          </div>
+          <div class="telefono">
+            <h4>Tel: +543624626465</h4>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="phone"
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ffffff"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"
+              />
+              <line x1="15" y1="7" x2="15" y2="7.01" />
+              <line x1="18" y1="7" x2="18" y2="7.01" />
+              <line x1="21" y1="7" x2="21" y2="7.01" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="redes">
+        <h4>Nuestras Redes</h4>
+        <a href="https://es-la.facebook.com/" target="_blank"
+          ><img class="facebook" src="/img/facebook.png" alt=""
+        /></a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><img class="instagram" src="/img/logo-insta.png" alt=""
+        /></a>
+      </div>
+
+      <form class="form">
+        <img src="/img/correo-electronico (2).png" />
+        <div class="form__section">
+          <div>
+            <input type="text" class="form__imput" placeholder="Nombre" />
+            <input type="email" class="form__imput" placeholder="Mail" />
+          </div>
+
+          <textarea class="form__imput" placeholder="Mensaje"></textarea>
+          <input type="submit" class="form__imput" />
+        </div>
+      </form>
+
+      <p>© Copyrigth Tienda De Pizzas -Diseño Web por INSA</p>
+    </footer>
+  </body>
+</html>
