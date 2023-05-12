@@ -189,16 +189,25 @@ nav ul li ul li a:hover {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
 }
+.img-conteiner {
+  display: flex;
+  justify-content: center;
 
+  margin-top: 150px;
+}
+.img-conteiner img {
+  width: 400px;
+  height: 400px;
+}
 .grid-conteiner {
   width: auto;
   height: auto;
   background-color: #030303;
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  /*grid-template-rows: 1fr 1fr;*/
+  grid-template-columns: 1fr 1fr;
   justify-items: center;
-  margin-top: 150px;
+  margin-top: -450px;
   /*border-radius: 3px;*/
   /*border: 10px solid black;*/
 }
@@ -211,28 +220,17 @@ nav ul li ul li a:hover {
   margin-top: 10px;
 }
 
-.img-conteiner {
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-}
-.img-conteiner img {
-  width: 400px;
-  height: 400px;
-}
-
 .grid-item {
   width: auto;
-  position: relative;
-  background-color: rgba(27, 13, 13, 0.8);
-  width: 50%;
+  background-color: rgba(27, 13, 13, 0.507);
+  width: 70%;
   height: 140px;
   border-radius: 3px;
-  border: 2px solid black;
+  /*border: 2px solid black;*/
   margin: 20px;
   color: rgb(242, 245, 243);
   text-align: center;
-  box-shadow: 0px 10px 10px 0px rgba(252, 250, 250, 0.87);
+  /*box-shadow: 0px 10px 10px 0px rgba(252, 250, 250, 0.87);*/
 }
 
 /* Contenedor Div Como Armar las Pizzas*/
@@ -420,9 +418,14 @@ iframe {
   display: flex;
   justify-content: center;
   margin: 10px;
-  gap: 20px;
+  /*gap: 20px;*/
   width: auto;
-  min-width: 200px;
+  /*min-width: 200px;*/
+}
+
+.horarios div {
+  display: flex;
+  margin-right: 5px;
 }
 
 .horarios h4 {
@@ -431,7 +434,7 @@ iframe {
   margin-right: 10px;
 }
 
-.domicilio {
+.find {
   display: flex;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.808);
   border-radius: 3px;
@@ -443,61 +446,7 @@ iframe {
   box-shadow: 0px 5px 10px 0px rgba(252, 250, 250, 0.87);
 }
 
-.icon-map-pin {
-  position: absolute;
-  margin-top: -5px;
-  margin-left: -20px;
-}
-
-.dias {
-  display: flex;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.808);
-  border-radius: 3px;
-  border: 2px solid black;
-  background-color: rgba(0, 0, 0, 0.425);
-  height: 60px;
-  padding-left: 20px;
-  padding-top: 20px;
-  box-shadow: 0px 5px 10px 0px rgba(252, 250, 250, 0.87);
-}
-
-.calendar {
-  position: absolute;
-  margin-top: -5px;
-  margin-left: -20px;
-}
-
-.horas {
-  display: flex;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.808);
-  border-radius: 3px;
-  border: 2px solid black;
-  background-color: rgba(0, 0, 0, 0.425);
-  height: 60px;
-  padding-left: 20px;
-  padding-top: 20px;
-  box-shadow: 0px 5px 10px 0px rgba(252, 250, 250, 0.87);
-}
-
-.clock {
-  position: absolute;
-  margin-top: -5px;
-  margin-left: -20px;
-}
-
-.telefono {
-  display: flex;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.808);
-  border-radius: 3px;
-  border: 2px solid black;
-  background-color: rgba(0, 0, 0, 0.425);
-  height: 60px;
-  padding-left: 20px;
-  padding-top: 20px;
-  box-shadow: 0px 5px 10px 0px rgba(252, 250, 250, 0.87);
-}
-
-.phone {
+.icon {
   position: absolute;
   margin-top: -5px;
   margin-left: -20px;
@@ -518,7 +467,7 @@ footer h4 {
 }
 
 .form-conteiner {
-  margin-left: 100px;
+  /*margin-left: 100px;*/
   /*margin-top: 10px;*/
   /*flex-wrap: wrap;*/
 }
@@ -603,10 +552,14 @@ footer p {
   }
 
   .logo img {
-    width: 120px;
+    width: 130px;
+  }
+  .img-conteiner img {
+    width: 150px;
   }
   .grid-item {
-    margin: 5;
+    margin: 5px;
+    width: 200px;
   }
   .armar {
     margin-right: 10px;
@@ -652,8 +605,42 @@ footer p {
   .sub-emp {
     margin-right: 5px;
   }
+
+  iframe {
+    height: 200px;
+  }
+  .horarios {
+    gap: 0px;
+  }
+  .horarios div {
+    display: grid;
+    margin-bottom: 5px;
+  }
   .horarios h4 {
-    font-size: 11px;
-    margin: 0;
+    font-size: 12px;
+    margin: 0px;
+    padding-left: 5px;
+  }
+  .find {
+    width: 150px;
+    padding-left: 30px;
+  }
+  .redes h4 {
+    margin-left: 0px;
+    margin-top: -10px;
+    margin-bottom: 0px;
+    font-size: 15px;
+  }
+  .facebook {
+    width: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .instagram {
+    width: 20px;
+    margin: 5px;
+  }
+  .form-conteiner {
+    padding-right: 10px;
   }
 }
