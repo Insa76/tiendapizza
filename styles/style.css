@@ -18,7 +18,7 @@ body {
   position: fixed;
   z-index: 99;
   bottom: 20px;
-  right: 25px;
+  right: 30px;
 }
 
 .logo {
@@ -560,11 +560,13 @@ footer p {
 
 @media (max-width: 480px) {
   .logo {
-    width: 50px;
+    width: 60px;
   }
   .titulo {
     font-size: 14px;
-    text-align: center;
+    text-align: right;
+    padding-right: 0px;
+    margin-left: 40px;
   }
 
   .logo img {
@@ -584,6 +586,7 @@ footer p {
   }
   .armar h3 {
     font-size: 15px;
+    text-align: center center;
     margin-bottom: 60px;
     margin-top: 90px;
   }
@@ -624,6 +627,7 @@ footer p {
     width: 50%;
     margin-right: 5px;
     margin-left: -10px;
+    padding-right: 0px;
   }
   .empanadas h3 {
     padding-right: 10px;
@@ -653,6 +657,7 @@ footer p {
   }
   .redes {
     margin-top: 0;
+    height: 60px;
   }
   .redes h4 {
     margin-left: 0px;
@@ -670,7 +675,7 @@ footer p {
     margin: 0px;
   }
   footer p {
-    margin-top: 25px;
+    margin-top: 45px;
   }
 
   .form img {
