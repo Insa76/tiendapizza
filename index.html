@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/887a835504.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="boton">
@@ -30,9 +34,6 @@
           <h2>La unica tienda donde podes comer pizzas</h2>
         </div>
 
-        <!--<div class="search">
-          <input type="search" placeholder="¿Que deseas buscar?" />
-        </div>-->
       </div>
 
       <div class="conteiner-menu">
@@ -52,16 +53,183 @@
                 </ul>
               </li>
               <li>
-                <a href="#"><b>Contacto</b></a>
+                <a href="#mapa"><b>Contacto</b></a>
               </li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
+    
     <main>
-      <div class="img-conteiner">
+      <!--<div class="img-conteiner">
         <div class="img-item">
+          <img src="/img/fondo.jpg" alt="" />
+        </div>-->
+        
+        <div class="carrousel">
+          <div class="conteCarrousel">
+            <div class="itemCarrousel" id="itemCarrousel-1">
+              <div class="itemCarrouselTarjeta">
+                <div>
+                  <h3>Opcion # 1</h3>
+                  <p>
+                    Queso Muzzarella, salsa, oregano y aceitunas. Todo encima de una
+                    especial masa casera.
+                  </p>
+                  <h4>$1200</h4>
+                </div>
+              </div>
+              <div class="itemCarrouselArrows">
+                <a href="#itemCarrousel-6">
+                  <i class="fas fa-chevron-left"></i>
+                </a>
+                <a href="#itemCarrousel-2">
+                  <i class="fas fa-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="itemCarrousel" id="itemCarrousel-2">
+              <div class="itemCarrouselTarjeta">
+                <div class="menu">
+                  <h3>Opcion # 2</h3>
+                  <p>
+                    Queso Muzzarella, salsa, Morrones, Jamon en Cubitos y Aceitunas
+                  </p>
+                  <h4>$1700</h4>
+                </div>
+              </div>
+              <div class="itemCarrouselArrows">
+                <a href="#itemCarrousel-1">
+                  <i class="fas fa-chevron-left"></i>
+                </a>
+                <a href="#itemCarrousel-3">
+                  <i class="fas fa-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="itemCarrousel" id="itemCarrousel-3">
+              <div class="itemCarrouselTarjeta">
+                <div>
+                  <h3>Opcion # 3</h3>
+                  <p>
+                    Queso Muzzarella, salsa, rodajas de tomate redondo, un toque de
+                    aceite de oliva y Aceitunas.
+                  </p>
+                  <h4>$1700</h4>
+                </div>
+              </div>       
+              <div class="itemCarrouselArrows">
+                <a href="#itemCarrousel-2">
+                  <i class="fas fa-chevron-left"></i>
+                </a>
+                <a href="#itemCarrousel-4">
+                  <i class="fas fa-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="itemCarrousel" id="itemCarrousel-4">
+                <div class="itemCarrouselTarjeta">
+                  <div>
+                    <h3>Opcion # 4</h3>
+                    <p>
+                      Queso Muzzarella, salsa, Rodajas de Tomate Redondo, Huevo picado y
+                      Aceitunas.
+                    </p>
+                    <h4>$1600</h4>
+                  </div>
+                </div>
+                <div class="itemCarrouselArrows">
+                  <a href="#itemCarrousel-3">
+                    <i class="fas fa-chevron-left"></i>
+                  </a>
+                  <a href="#itemCarrousel-5">
+                    <i class="fas fa-chevron-right"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="itemCarrousel" id="itemCarrousel-5">
+                <div class="itemCarrouselTarjeta">
+                  <div>
+                    <h3>Opcion # 5</h3>
+                    <p>
+                      Queso Muzzarella, salsa, Cebolla Caramelizada, Cuadraditos de
+                      Panceta salteadas y Aceitunas.
+                    </p>
+                    <h4>$1700</h4>
+                  </div>
+                </div>
+                <div class="itemCarrouselArrows">
+                  <a href="#itemCarrousel-4">
+                    <i class="fas fa-chevron-left"></i>
+                  </a>
+                  <a href="#itemCarrousel-6">
+                    <i class="fas fa-chevron-right"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="itemCarrousel" id="itemCarrousel-6">
+                <div class="itemCarrouselTarjeta">
+                  <div>
+                    <h3>Opcion # 6</h3>
+                    <p>
+                      Queso Muzzarella, salsa, Morrones Asados, Jamon en Cubitos y
+                      Aceitunas.
+                    </p>
+                    <h4>$1700</h4>
+                  </div>
+                </div>
+
+                <div class="itemCarrouselArrows">
+                  <a href="#itemCarrousel-5">
+                    <i class="fas fa-chevron-left"></i>
+                  </a>
+                  <a href="#itemCarrousel-1">
+                    <i class="fas fa-chevron-right"></i>
+                  </a>
+                </div>
+              </div>
+          </div>
+          <div class="conteCarrouselController">
+            <a href="#itemCarrousel-1"
+              ><img
+                class="punto"
+                src="/img/detener.png"
+                alt=""
+            /></a>
+            <a href="#itemCarrousel-2"><img
+              class="punto"https
+              src="/img/detener.png"
+              alt=""
+          /></a></a>
+            <a href="#itemCarrousel-3"><img
+              class="punto"
+              src="/img/detener.png"
+              alt=""
+          /></a></a>
+          <a href="#itemCarrousel-4"><img
+            class="punto"
+            src="/img/detener.png"
+            alt=""
+        /></a></a>
+        <a href="#itemCarrousel-5"><img
+          class="punto"
+          src="/img/detener.png"
+          alt=""
+      /></a></a>
+      <a href="#itemCarrousel-6"><img
+        class="punto"
+        src="/img/detener.png"
+        alt=""
+    /></a></a>
+          </div>
+        </div>
+
+
+
+
+
+        <!--<div class="img-item">
           <img src="/img/dough-g48902153b_1280.jpg" alt="" />
         </div>
         <div class="img-item">
@@ -119,40 +287,45 @@
           </p>
           <h4>$1700</h4>
         </div>
-      </div>
+      </div>-->
 
+      <div id="armar"></div>
       <div class="conteiner-armar">
         <div class="ingredientes">
           <h3>Ingredientes</h3>
-
-          <ul>
-            <li>$200 c/u</li>
-            <li>Tomates</li>
-            <li>Morrones</li>
-            <li>Ajies</li>
-            <li>Cebolla</li>
-            <li>Huevo</li>
-            <li>Salchichas</li>
-          </ul>
-
-          <ul>
-            <li>$300 c/u</li>
-            <li>Jamon</li>
-            <li>Panceta</li>
-            <li>Champignones</li>
-            <li>Longaniza</li>
-            <li>Roquefot</li>
-            <li>Humita</li>
-          </ul>
+          <div class="lista">
+            <ul>
+              <li>$200 c/u</li>
+              <li>Tomates</li>
+              <li>Morrones</li>
+              <li>Ajies</li>
+              <li>Cebolla</li>
+              <li>Huevo</li>
+              <li>Salchichas</li>
+            </ul>
+  
+            <ul>
+              <li>$300 c/u</li>
+              <li>Jamon</li>
+              <li>Panceta</li>
+              <li>Champignones</li>
+              <li>Longaniza</li>
+              <li>Roquefot</li>
+              <li>Humita</li>
+            </ul>
+          </div>
+          
         </div>
-        <div id="armar" class="armar">
-          <h3>Como Armar Tu Pizza Favorita</h3>
-          <p><b>Pizza de Muzzarella + Los Ingredientes que te gusten</b></p>
-        </div>
+        
+        <div class="armar">
+            <h3>Como Armar Tu Pizza Favorita</h3>
+            <p><b>Pizza de Muzzarella + Los Ingredientes que te gusten</b></p>
+        </div>        
       </div>
 
+      <div id="empanadas"></div>
       <div class="conteiner-emp">
-        <div id="empanadas" class="empanadas">
+        <div class="empanadas">
           <p><b>Empanadas de Carne $1800</b></p>
           <p><b>Empanadas de Jamon y Queso $1800</b></p>
           <p><b>Empanadas de Humita $1650</b></p>
@@ -162,12 +335,13 @@
           <h3>Empanadas</h3>
         </div>
       </div>
+      <div id="migas"></div>
 
       <div class="conteiner-migas">
         <div class="sub">
           <h3>Sandwiches de Miga</h3>
         </div>
-        <div id="migas" class="migas">
+        <div class="migas">
           <p><b>Migas Simple de Jamon y Queso $1800</b></p>
           <p><b>Migas Triple de Jamon y Queso $1800</b></p>
           <p><b>Migas Triple Lechuga, Tomate, Jamon y Queso $1650</b></p>
@@ -175,7 +349,7 @@
         </div>
       </div>
 
-      <div class="mapa">
+      <div id="mapa" class="mapa">
         <h4>Donde Encontrarnos</h4>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2977.2750561538523!2d-58.99780554760635!3d-27.45067751831893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94450db1796693a9%3A0x2e7edeebeb043526!2sTienda%20de%20Pizzas!5e0!3m2!1ses!2sar!4v1683431955073!5m2!1ses!2sar"
@@ -284,10 +458,10 @@
     <footer>
       <div class="redes">
         <h4>Nuestras Redes</h4>
-        <a href="https://es-la.facebook.com/" target="_blank"
+        <a href="https://www.facebook.com/tdepizzas" target="_blank"
           ><img class="facebook" src="/img/facebook.png" alt=""
         /></a>
-        <a href="https://www.instagram.com/" target="_blank"
+        <a href="https://www.instagram.com/tiendadepizzas_" target="_blank"
           ><img class="instagram" src="/img/logo-insta.png" alt=""
         /></a>
       </div>

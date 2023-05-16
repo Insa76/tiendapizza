@@ -192,27 +192,140 @@ nav ul li ul li a:hover {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
 }
-.img-conteiner {
+
+.carrousel {
+  width: 100%;
+}
+
+.conteCarrousel {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  margin-top: 150px;
+  border: 40px solid black;
+}
+
+.itemCarrousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.itemCarrouselTarjeta {
+  width: 100%;
+  padding: 20px;
+}
+
+.itemCarrouselTarjeta div {
+  text-align: center;
+  background-color: rgba(12, 12, 12, 0.534);
+  color: white;
+  margin-top: 10%;
+  padding: 10px;
+  width: 100%;
+  border: 2px solid white;
+  z-index: 100;
+}
+
+.itemCarrouselArrows {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.itemCarrouselArrows > i:hover {
+  cursor: pointer;
+}
+
+#itemCarrousel-1 {
+  background-image: url(/img/fondo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#itemCarrousel-2 {
+  background-image: url(/img/fondo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#itemCarrousel-3 {
+  background-image: url(/img/fondo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#itemCarrousel-4 {
+  background-image: url(/img/fondo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#itemCarrousel-5 {
+  background-image: url(/img/fondo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#itemCarrousel-6 {
+  background-image: url(/img/fondo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.conteCarrouselController {
+  width: 100%;
   display: flex;
   justify-content: center;
+  gap: 10px;
+}
 
+.conteCarrouselController > a {
+  text-decoration: none;
+  font-size: 2em;
+  color: grey;
+}
+
+.itemCarrouselArrows > a > i {
+  color: rgb(7, 7, 7);
+}
+.punto {
+  width: 20px;
+}
+
+/*.img-conteiner {
+  display: flex;
+  justify-content: center;
   margin-top: 150px;
 }
 .img-conteiner img {
   width: 100%;
   height: 400px;
-}
+}*/
+
 .grid-conteiner {
   width: 100%;
-  height: auto;
+  height: 500px;
   background-color: #030303;
   display: grid;
-  /*grid-template-rows: 1fr 1fr;*/
-  grid-template-columns: 1fr 1fr;
   justify-items: center;
   margin-top: -450px;
-  /*border-radius: 3px;*/
-  /*border: 10px solid black;*/
 }
 
 .grid-conteiner h3 {
@@ -224,13 +337,13 @@ nav ul li ul li a:hover {
 }
 
 .grid-item {
-  width: 100%;
   background-color: rgba(27, 13, 13, 0.507);
-  width: 70%;
-  height: 140px;
+  width: 40%;
+  height: 100px;
   border-radius: 3px;
   border: 2px solid rgb(255, 252, 252);
   margin: 20px;
+  margin-bottom: 50px;
   color: rgb(242, 245, 243);
   text-align: center;
   /*box-shadow: 0px 10px 10px 0px rgba(252, 250, 250, 0.87);*/
@@ -239,19 +352,19 @@ nav ul li ul li a:hover {
 /* Contenedor Div Como Armar las Pizzas*/
 .conteiner-armar {
   display: flex;
+  justify-content: center;
   background-color: black;
   margin-top: 150px;
   justify-content: space-between;
 }
 
 .armar {
-  background-color: black;
-  background-image: url(/img/pizza-gde79d3e41_1280.jpg);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/img/pizza-gde79d3e41_1280.jpg);
+  /*background-image: url(/img/pizza-gde79d3e41_1280.jpg);*/
   background-position: center;
   background-size: cover;
-  /*background-attachment: fixed;*/
-  filter: sepia(0.7);
-  height: 300px;
+  height: 330px;
   margin: 20px;
   padding: 10px;
   text-align: center;
@@ -259,20 +372,20 @@ nav ul li ul li a:hover {
   width: 100%;
   /*min-width: 160px;*/
 }
+
 .armar h3 {
-  color: rgb(8, 8, 8);
-  margin-bottom: 140px;
-  margin-top: 20px;
-  /*min-width: 200px;*/
+  color: rgb(252, 250, 249);
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 .armar p {
+  color: rgb(250, 247, 247);
   margin-right: 20px;
-  color: #030303;
   text-align: center;
 }
 
 .ingredientes {
-  display: flex;
+  /*display: flex;*/
   justify-content: center;
   margin: 20px;
   margin-left: 20px;
@@ -282,6 +395,11 @@ nav ul li ul li a:hover {
   font-size: 17px;
   gap: 20px;
   font-family: "Shadows Into Light", cursive;
+}
+
+.lista {
+  display: flex;
+  gap: 40px;
 }
 
 .ingredientes ul li {
@@ -296,26 +414,6 @@ nav ul li ul li a:hover {
   /*min-width: 200px;*/
 }
 
-/*.grupo-1 {
-  margin-right: 50px;
-  /*box-shadow: 0px 5px 10px 0px rgba(5, 5, 5, 0.87);
-  color: rgb(72, 150, 104);
-  background-color: rgba(0, 0, 0, 0.507);
-}*/
-
-/*.grupo-1 h4 {
-  margin-bottom: 10px;
-}
-.grupo-2 {
-  box-shadow: 0px 5px 10px 0px rgba(5, 5, 5, 0.87);
-  color: rgb(72, 150, 104);
-  background-color: rgba(0, 0, 0, 0.507);
-}
-
-.grupo-2 h4 {
-  margin-bottom: 10px;
-}*/
-
 /*Contenedor Div Empanadas*/
 .conteiner-emp {
   background-color: black;
@@ -327,13 +425,12 @@ nav ul li ul li a:hover {
 }
 .empanadas {
   width: 100%;
-  color: rgb(10, 10, 10);
+  color: white;
   margin: 20px;
-  background-color: rgb(8, 8, 8);
-  background-image: url(https://www.delicieuxsecret.com/img/272/226732/max/p/samboussik-de-boeuf.jpg);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://www.delicieuxsecret.com/img/272/226732/max/p/samboussik-de-boeuf.jpg);
   background-position: center;
   background-size: cover;
-  /*background-attachment: fixed;*/
   filter: sepia(0.7);
   border-radius: 2px;
   padding: 30px;
@@ -372,10 +469,10 @@ nav ul li ul li a:hover {
 }
 .migas {
   width: 100%;
-  color: rgb(10, 10, 10);
+  color: rgb(255, 255, 255);
   margin: 20px;
-  background-color: rgb(8, 8, 8);
-  background-image: url(https://placeralplato.com/files/2015/05/Receta-de-sndwiches-de-miga.jpg);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://placeralplato.com/files/2015/05/Receta-de-sndwiches-de-miga.jpg);
   background-position: center;
   background-size: cover;
   /*background-attachment: fixed;*/
@@ -478,11 +575,11 @@ footer h4 {
   letter-spacing: 2px;
 }
 
-.form-conteiner {
-  /*margin-left: 100px;*/
-  /*margin-top: 10px;*/
-  /*flex-wrap: wrap;*/
-}
+/*.form-conteiner {
+  margin-left: 100px;*/
+/*margin-top: 10px;*/
+/*flex-wrap: wrap;
+}*/
 .form {
   display: flex;
 }
@@ -573,7 +670,7 @@ footer p {
     width: 130px;
   }
   .img-conteiner img {
-    width: 120px;
+    width: 100%;
   }
   .grid-item {
     margin: 5px;
@@ -588,7 +685,7 @@ footer p {
     font-size: 15px;
     text-align: center center;
     margin-bottom: 60px;
-    margin-top: 90px;
+    margin-top: 60px;
   }
   .armar p {
     font-size: 15px;
